@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>LOGIN FORM</title>
+  <style>
+    .box-form{
+  margin-top: 60px;
+  margin-left: 220px;
+}
+.box-form{
+  margin: 10vh,auto;
+  width: 65vw;
+  background:#FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex:1 1 100%;
+  align-items: stretch;
+  justify-content:space-between;
+  box-shadow: 0 0 20px 6px rgb(29, 29, 70);
+  height: 80vh;
+
+}
+a{
+  text-decoration: none;
+}
+@media(max-width:980px){
+  .box-form{
+    flex-flow: wrap;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    height: auto;
+
+  }
+}
+.box-form div{
+  height: auto;
+}
+.box-form .left {
+  background-image: url("images/bobwave.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: #FFFFFF;
+}
+.box-form .left .overlay{
+  padding: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.box-form .left .overlay h1{
+  font-size: 3vmax;
+  line-height: 1;
+  font-weight: 700;
+  margin-top: 10vh;
+  margin-bottom: 0vh;
+
+}
+.box-form .left .overlay p{
+  margin-left: 100px;
+  margin-top: 45px;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.box-form .right{
+  padding-left:4vw;
+  overflow: hidden;
+  width: 20vw;
+  height: 100vh;
+  padding-right: 4vw;
+  padding-top: 2vh;
+  
+}
+@media(max-width:980px){
+  .box-form .right{
+    width: 50vw;
+    height: 50vh;
+  }
+}
+.box-form .right .input{
+  overflow: hidden;
+}
+.box-form .right .input input{
+  outline-style: none;
+  border: none;
+  border-bottom: 2px solid purple;
+  width: 300px;
+  padding: 15px;
+}
+.box-form .btn{
+  border: 2px solid rgb(105, 38, 105);
+  background-color: #6d128b;
+  color: white;
+  padding: 8px 100px;
+  letter-spacing: 2px;
+  font-size: 11px;
+  cursor: pointer;
+  margin-top: 20px;
+
+}
+.box-form p{
+  margin-top: 30px;
+  font-size: 13px;
+  text-align: center;
+}
+.box-form .right .icon .btn1{
+  margin-top: 20px;
+  border: 2px solid rgb(110, 202, 238);
+  background-color:rgb(110, 202, 238);
+  color: white;
+  padding: 5px 55px;
+  font-size: 15px;
+  text-align:left;
+  letter-spacing: 1px;
+ 
+}
+.box-form .right .icon .btn2{
+  margin-top: 30px;
+  border: 2px solid rgb(11, 48, 126);
+  background-color:rgb(11, 48, 126);
+  color: white;
+  padding: 5px 60px;
+  font-size: 15px;
+  text-align:left;
+
+}
+  </style>
+</head>
+<body>
+  <div class="box-form">
+    <div class="left">
+       <!-- <img src="E:\Development\sing in html\images\bobwave.jpg">-->
+            <div class="overlay">
+         <h1>Welcome Page</h1>
+         <p> Sing in to <br>Continue access</p>
+      </div>
+    </div>
+
+    <div class="right">
+      <h1>Sing In</h1>
+      <div class="input">
+         <input type="text" name="EmaiId" placeholder="Email Address"><br><br>
+         <input type="password" name="password" placeholder="Password">
+      </div>
+       <br><br>
+
+      <button class="btn">CONTINUE</button>
+      <p>or Connect with Social Media</p>
+       <div class="icon">
+         <button class="btn1"><i class="fa fa-twitter" style="height: 20px;">Sing in with Twitter</i></button>
+         <br>
+         <button class="btn2"><i class="fa fa-facebook-f" style="height: 20px;">Sing in With Facebook</i></button>
+       </div>
+    </div>
+
+  </div>
+</body>
+</html>
+
+
